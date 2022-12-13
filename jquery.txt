@@ -1,0 +1,106 @@
+     Activitatile obiectului:        ex: function(eventObject) { evenObject.pageX }
+pageX
+pageY
+screenX
+screenY
+altKey
+shiftKey    
+ctrlKey
+target
+.preventDefault()
+return false;
+        
+    jQuery Activitati
+ .hover = mouseover,mouseout  (function,function)  
+ .toggle  =    [ .click(function() {  $('element').toggle('effect');  }); ]
+ .toggleClass  - [ .click(function() {  $('element').toggleClass('class');  }); ]
+
+    Browser Activitati  ex: click.(function() {...});
+.mouseover
+.mouseout
+.click
+.dblclick
+.mousemove
+.mousedown
+.mouseup
+ .submit    -complectarea unui spatiu de catre user
+ .focus
+ .blur      -pateria fokusa
+ .change    -orice skimbare a textului (pentru input,text, select)
+ .reset
+.keypress
+.keydown
+.keyup
+ .load      -polnaia zagruska
+ .resize    -skimbarea marimilor la browser
+ .scroll
+ .unload    -uhod so straniti
+
+        OPERATII sau METODE:
+.text()     - afla/modifica textul
+.hide()     - ascunde elementul (timpul)
+.show()     - arata elementul (timpul)
+.height()   - afla/modifica innaltimea elementului
+.width()    - afla/modifica latimea elementului
+.html()     - afla/modifica codul html 
+.fadeOut()  - ascunde treptat elementul (timpul)
+.fadeIn()   - apare treptat elementul (timpul)
+.fadeTo()   - schimba treptat transparenta (timpul,consistenta 0->1)
+.slideUp()  - dispare de jos in sus (timpul)
+.slideDown()- apare de sus in jos (timpul)
+.attr()     - afla,modifica/creeaza un atribut (atributul,continutul)
+.removeAttr()-sterge un atribut
+.addClass() - css
+.removeClass()-css
+.css()      - afla,modifica un element css (element,continutul) ({'element':'continut','altelement':'continut'})
+.animate()  - css + timp [+ functie] ({e:c},timpul,function())
+.before()   - adauga un element html inainte de elementul selectat (html element)
+.after()    - adauga un element html dupa elementul selectat (html element)
+.prepend()  - adauga un element html in interiorul elementului selectat la inceput (html element)
+.append()   - adauga un element html in interiorul elementului selectat la sfirsit (html element)
+ .each()     - fiecare element / semiciclu (function() { $(this)... })     $(this) - elementul curent
+.size()     - arata numarul de elemente selectate ex: $('div').size(); = 12
+.get()      - alege un element dupa numarul lui ex:$('div').get(7);
+.clone()    - cloneaza
+.remove()   - sterge un element dar il poate pastra ca variabila 
+.val();     - afla/modifica valoarea obiectului (la elementele formei)
+        J S
+.search()   - reg exp ex: .search(regV);  == -1
+
+      SELECTORI   Exemple:
+$('#main_h1, img[src*=moto]');- prim virgula se pot selecta mai multe obiecte diferite !
+$('img[alt]');              -selecteaza daca contine un anumit atribut
+$('.maindiv');              -selecteaza dupa class                        // $(); =  jquery(); 
+$('#main_h1');              -selecteaza dupa id
+$('p');                     -selecteaza dupa tag name    
+$('#main_h1 + p'); (+)      -selecteaza urmatorul    
+$('#div_for_img > img');(>) -selecteaza copiii  
+$('#div_for_img img');      -selecteaza din interior
+$('img[width=200]');        -selecteaza dupa atribut
+$('a[href^=http]');         -selecteaza dupa inceput
+$('img[src$=.jpg]');        -selecteaza dupa sfirsit
+$('img[src*=moto]');        -selecteaza dupa continut
+        FILTRE
+$('#moto-table tr	:even	');   -nr. pare
+$('#moto-table tr	:odd	');    -nr. impare
+$('img			:not	(#div_for_img img)');-inafara de
+$('div			:has	(fieldset)');     -care contine
+$('p			:contains	(мотоцикл)');  -care cotine textul dat
+$('#div_for_img img	:first'	);-primul element
+$('#div_for_img img	:last')	; -ultimul element
+$('div			:hidden');            -toate ascunse
+$('div			:visibility');        -toate vizibile
+   Filtre din elementele formei    <input type="...">
+ :input       $('#form :input')
+ :text        $(' :text');
+ :password
+ :radio
+ :checkbox
+ :submit
+ :image
+ :reset
+ :button
+ :file
+ :hidden
+ :checked    - for radio and checkbox  ex: $('#form :checkbox:checked')
+:selected   - for select
